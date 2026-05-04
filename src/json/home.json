@@ -1,0 +1,88 @@
+{
+  "Tour_Category": [
+    {
+      "id": 1,
+      "title": "Cruises"
+    },
+    {
+      "id": 2,
+      "title": "Hiking"
+    },
+    {
+      "id": 3,
+      "title": "Airbirds"
+    },
+    {
+      "id": 4,
+      "title": "Wildlife"
+    },
+    {
+      "id": 5,
+      "title": "Walking"
+    }
+  ],
+  "Popular_Tours": [
+    {
+      "id": 1,
+      "title": "Patagonia Trek",
+      "rate": 4.8,
+      "day": "7 days"
+    },
+    {
+      "id": 2,
+      "title": "Dubai Luxury Escape",
+      "rate": 4.9,
+      "day": "7 days"
+    },
+    {
+      "id": 3,
+      "title": "Tokyo Journey",
+      "rate": 4.9,
+      "day": "7 days"
+    }
+  ],
+  "Tour_Guider": [
+    {
+      "id": 1,
+      "name": "Daniel Cruz",
+      "duty": "Adventure & Hiking Guide"
+    },
+    {
+      "id": 2,
+      "name": "Sara Mitchell",
+      "duty": "Walking Tour Expert"
+    },
+    {
+      "id": 3,
+      "name": "Ahmed Al-Farsi",
+      "duty": "Desert & City Tour Specialist"
+    },
+    {
+      "id": 4,
+      "name": "Aisha Khan",
+      "duty": "Cultural & Heritage Guide"
+    }
+  ],
+  "Next_Adventure": [
+    {
+      "id": 1,
+      "Country": "Egypt",
+      "Travelers": "174,688 Travelers"
+    },
+    {
+      "id": 2,
+      "Country": "Greece",
+      "Travelers": "174,688 Travelers"
+    },
+    {
+      "id": 3,
+      "Country": "United Kingdom",
+      "Travelers": "174,688 Travelers"
+    },
+    {
+      "id": 4,
+      "Country": "France",
+      "Travelers": "174,688 Travelers"
+    }
+  ]
+}
