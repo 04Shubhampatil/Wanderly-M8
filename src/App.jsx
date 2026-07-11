@@ -1,10 +1,13 @@
-import React from 'react'
-import HomePage from './pages/Home-Page/HomePage'
+import React from "react";
+import Dubai_Luxury_Escape from "./pages/Pakages_Dubai/Dubai_Luxury_Escape";
 
-const App = () => {
+
+function App() {
   return (
-    <HomePage/>
-  )
+    <div>
+      <Dubai_Luxury_Escape />
+    </div>
+  );
 }
 
-export default App
+export default App;
