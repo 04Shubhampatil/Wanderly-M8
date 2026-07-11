@@ -1,8 +1,13 @@
+import React from "react";
+import Dubai_Luxury_Escape from "./pages/Pakages_Dubai/Dubai_Luxury_Escape";
 
-const App = () => {
+
+function App() {
   return (
-    <div >App</div>
-  )
+    <div>
+      <Dubai_Luxury_Escape />
+    </div>
+  );
 }
 
-export default App
+export default App;
