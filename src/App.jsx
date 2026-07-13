@@ -1,9 +1,13 @@
-import React from 'react'
-import Home from './pages/Destination/Home'
-const App = () => {
-  return (
-    <Home/>
-  )
+
+
+
+// import HomePage from "./pages/Home-Page/HomePage";
+
+import Approuter from "./routes/Approuter";
+
+
+function App() {
+  return <Approuter/>
 }
 
-export default App
+export default App;

@@ -1,16 +1,139 @@
-# React + Vite
+## Folder Structure
 
-This template provides a minimal setup to get React working in Vite with HMR and some ESLint rules.
+Top-level layout of this project:
 
-Currently, two official plugins are available:
+```text
+my-hotel-booking-app/
+├── public/
+│   └── favicon.ico
+│
+├── src/
+│   ├── assets/                     # Static assets used across the application
+│   │   ├── icons/
+│   │   └── images/
+│   │
+│   ├── components/                # Global reusable components
+│   │   ├── ui/                    # Buttons, Inputs, Cards, Modals, etc.
+│   │   │   ├── Button.jsx
+│   │   │   ├── Input.jsx
+│   │   │   ├── Card.jsx
+│   │   │   └── Modal.jsx
+│   │   │
+│   │   ├── layout/                # Shared layout components
+│   │   │   ├── Navbar.jsx
+│   │   │   ├── Footer.jsx
+│   │   │   └── Sidebar.jsx
+│   │   │
+│   │   └── Protection/
+│   │       └── ProtectedRoute.jsx
+│   │
+│   ├── json/                      # Global dummy/mock JSON data
+│   │   ├── hotels.json
+│   │   ├── destinations.json
+│   │   ├── promotions.json
+│   │   ├── bookings.json
+│   │   ├── reviews.json
+│   │   └── users.json
+│   │
+│   ├── pages/                     # Page-based modules
+│   │
+│   │   ├── home/
+│   │   │   ├── components/
+│   │   │   │   ├── HeroSection.jsx
+│   │   │   │   ├── FeaturedHotels.jsx
+│   │   │   │   ├── PopularDestinations.jsx
+│   │   │   │   └── PromoBanner.jsx
+│   │   │   └── HomePage.jsx
+│   │   │
+│   │   ├── about/
+│   │   │   ├── components/
+│   │   │   │   ├── AboutHero.jsx
+│   │   │   │   ├── CompanyStory.jsx
+│   │   │   │   ├── TeamSection.jsx
+│   │   │   │   └── ValuesSection.jsx
+│   │   │   └── AboutPage.jsx
+│   │   │
+│   │   ├── services/
+│   │   │   ├── components/
+│   │   │   │   ├── ServiceCard.jsx
+│   │   │   │   ├── BenefitsSection.jsx
+│   │   │   │   └── FAQSection.jsx
+│   │   │   └── ServicesPage.jsx
+│   │   │
+│   │   ├── auth/
+│   │   │   ├── components/
+│   │   │   │   ├── LoginForm.jsx
+│   │   │   │   ├── SignupForm.jsx
+│   │   │   │   └── ForgotPasswordForm.jsx
+│   │   │   └── AuthPage.jsx
+│   │   │
+│   │   ├── hotels/
+│   │   │   ├── components/
+│   │   │   │   ├── HotelCard.jsx
+│   │   │   │   ├── HotelList.jsx
+│   │   │   │   ├── SearchFilters.jsx
+│   │   │   │   ├── HotelGallery.jsx
+│   │   │   │   └── ReviewSection.jsx
+│   │   │   ├── SearchResultsPage.jsx
+│   │   │   └── HotelDetailsPage.jsx
+│   │   │
+│   │   ├── booking/
+│   │   │   ├── components/
+│   │   │   │   ├── SummaryCard.jsx
+│   │   │   │   ├── PaymentForm.jsx
+│   │   │   │   ├── GuestDetailsForm.jsx
+│   │   │   │   └── BookingSuccess.jsx
+│   │   │   └── BookingPage.jsx
+│   │   │
+│   │   └── contact/
+│   │       ├── components/
+│   │       │   ├── ContactForm.jsx
+│   │       │   ├── ContactInfo.jsx
+│   │       │   └── MapSection.jsx
+│   │       └── ContactPage.jsx
+│   │
+│   ├── context/                  # React Context providers
+│   │   ├── AuthContext.jsx
+│   │   ├── BookingContext.jsx
+│   │   └── ThemeContext.jsx
+│   │
+│   ├── hooks/                    # Global custom hooks
+│   │   ├── useFetch.js
+│   │   └── useDebounce.js
+│   │
+│   ├── services/                 # Shared API configuration
+│   │   └── apiClient.js
+│   │
+│   ├── utils/                    # Utility/helper functions
+│   │   ├── formatters.js
+│   │   ├── validators.js
+│   │   └── constants.js
+│   │
+│   ├── routes/
+│   │   └── AppRoutes.jsx
+│   │
+│   ├── styles/
+│   │   └── index.css
+│   │
+│   ├── App.jsx
+│   └── main.jsx
+│
+├── .env
+├── eslint.config.js
+├── package.json
+├── vite.config.js
+└── README.md
+```
 
-- [@vitejs/plugin-react](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react) uses [Oxc](https://oxc.rs)
-- [@vitejs/plugin-react-swc](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react-swc) uses [SWC](https://swc.rs/)
+### Structure Guidelines
 
-## React Compiler
+* **pages/** contains page-specific modules and their internal components.
+* **components/** contains only reusable components shared across multiple pages.
+* **json/** stores dummy/mock data used during development before backend integration.
+* **assets/** stores global images, icons, and other static resources.
+* **services/** contains API configuration and shared network utilities.
+* **context/** manages global application state using React Context.
+* **hooks/** contains reusable custom React hooks.
+* **utils/** contains helper functions and constants used throughout the application.
 
-The React Compiler is not enabled on this template because of its impact on dev & build performances. To add it, see [this documentation](https://react.dev/learn/react-compiler/installation).
-
-## Expanding the ESLint configuration
-
-If you are developing a production application, we recommend using TypeScript with type-aware lint rules enabled. Check out the [TS template](https://github.com/vitejs/vite/tree/main/packages/create-vite/template-react-ts) for information on how to integrate TypeScript and [`typescript-eslint`](https://typescript-eslint.io) in your project.
+Update this section whenever new top-level directories or major modules are introduced.
