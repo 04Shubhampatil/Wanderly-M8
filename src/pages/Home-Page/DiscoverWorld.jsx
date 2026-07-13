@@ -1,15 +1,19 @@
 import React from "react";
 import bgImg from "../../assets/Images/what-about-ha-long-bay-1 1.svg";
+import Navbar from "../../components/layout/Navbar";
 
 const DiscoverWorld = () => {
   return (
     <div className="w-full">
+      
       <div
         className="h-[53rem] w-full bg-cover bg-center flex flex-col justify-between text-white px-12"
         style={{ backgroundImage: `url(${bgImg})` }}
       >
         {/* Header container start */}
-        <div className="h-[90px] w-full border"></div>
+        <div className="h-[90px] w-full">
+ <Navbar isHomePage={true} />
+        </div>
         {/* Header container end */}
 
         {/* Content Box Start*/}

@@ -1,13 +1,13 @@
-import React from "react";
-import Dubai_Luxury_Escape from "./pages/Pakages_Dubai/Dubai_Luxury_Escape";
+
+
+
+// import HomePage from "./pages/Home-Page/HomePage";
+
+import Approuter from "./routes/Approuter";
 
 
 function App() {
-  return (
-    <div>
-      <Dubai_Luxury_Escape />
-    </div>
-  );
+  return <Approuter/>
 }
 
 export default App;

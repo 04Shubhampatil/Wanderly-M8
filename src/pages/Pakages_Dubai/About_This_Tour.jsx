@@ -1,5 +1,5 @@
-import React from "react";
-import { CheckCircle } from "lucide-react";
+
+// import { CheckCircle } from "lucide-react";
 import img from "../../assets/Images/3D Morph Lines 6.svg"
 import Accomodation from "../../assets/Icons/Accomodation.svg";
 import Meal from "../../assets/Icons/Meals.svg";

@@ -1,13 +1,17 @@
-import React from "react";
+
 import Dubai_Luxury_Escape_2 from "./Dubai_Luxury_Escape_2";   
 import About_This_Tour from "./About_This_Tour";
 import Day_Wise from "./Day_Wise";
 import About from "./About";
+import Navbar from "../../components/layout/Navbar";
+import TravelerReviews from "./TravelerReviews";
 
 
 const Dubai_Luxury_Escape = () => {
   return (
-    <div className="w-full h-[328px] flex justify-center mt-[149px] " >
+   <>
+   <Navbar isHomePage={false} />
+    <div className="w-full h-[328px] flex justify-center  " >
       
       <div className="relative w-full">
         
@@ -38,6 +42,7 @@ const Dubai_Luxury_Escape = () => {
               < About_This_Tour />
               <Day_Wise />
               < About />
+              <TravelerReviews/>
              
 
 
@@ -46,7 +51,7 @@ const Dubai_Luxury_Escape = () => {
     
 
     </div>
-    
+    </>
   );
 };
 

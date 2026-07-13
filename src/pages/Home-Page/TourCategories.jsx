@@ -1,8 +1,19 @@
-import React from 'react'
+
 import vectorImg from '../../assets/Icons/Vector 1052.svg'
 import notebookImg from '../../assets/Icons/Notebook.svg'
+import homeData from '../../json/home.json' // Importing your JSON file
+
+// Import your category images
+import cruiseImg from '../../assets/Images/cruiseImg.svg'
+import hikingImg from '../../assets/Images/hikingImg.svg'
+import birdImg from '../../assets/Images/birdImg.svg'
+import wildLifeImg from '../../assets/Images/wildLifeImg.svg'
+import walkingImg from '../../assets/Images/walkingImg.svg'
 
 const TourCategories = () => {
+  // Map array indexes to your imported images to match the JSON order
+  const categoryImages = [cruiseImg, hikingImg, birdImg, wildLifeImg, walkingImg]
+
   return (
     <div className='relative min-h-[50rem] w-full overflow-hidden'>
 
@@ -17,122 +28,47 @@ const TourCategories = () => {
 
         {/* Header Start*/}
         <div className='text-[#143F4A] flex justify-center items-start pt-16 mb-20'>
-
           <div className='mr-7'>
             <p className="text-[26px] text-center font-semibold">
               Wonderful Place For You
             </p>
             <h1 className="text-[48px] font-bold text-center">Tour Categories</h1>
           </div>
-
           <div className='h-[100px] w-auto pt-7'>
             <img className='h-[60px] w-[60px]' src={notebookImg} alt="notebook img" />
           </div>
-
         </div>
-
         {/* Header End*/}
 
-        {/* Categories Read More Section Start */}
+        {/* Categories Section Start */}
+        <div className='px-15 w-full flex justify-between text-[#143F4A] gap-4'>
 
-        <div className='px-15 w-full h-[500px] border border-black flex'>
+          {/* Mapping over Tour_Category dynamically */}
+          {homeData.Tour_Category.map((category, index) => (
+            <div key={category.id || index} className="w-[230px] min-h-[340px] flex flex-col justify-between pb-4">
+              
+              <div>
+                {/* Dynamically sources the image from our array using loop index */}
+                <img 
+                  className='w-[230px] h-auto object-cover mb-4 rounded-xl'
+                  src={categoryImages[index] || cruiseImg} 
+                  alt={category.title} 
+                />
+                {/* Dynamically displays the category name */}
+                <p className='text-[24px] text-center font-bold mb-4'>{category.title}</p>
+              </div>
 
-          {/* Img and Read More Section Start */}
-
-          <div className="w-full flex justify-between border border-black text-[#143F4A]">
-
-            {/* Cruise Section Start */}
-
-            <div className="w-[230px] h-[340px]  border border-black">
-
-              <img className='w-[230px] h-[] mb-4'
-                src="src/assets/Images/cruiseImg.svg" alt="Bird Img" />
-
-              <p className='text-[24px] text-center font-bold mb-2'>Airbirds</p>
-
-              <div className='flex justify-center'>
-                <a href="#" className='text-[18px] border border-[#143F4A80]/50 rounded-4xl px-7 py-2'>Read More →</a>
+              <div className='flex justify-center mt-auto'>
+                <a href="#" className='text-[18px] border border-[#143F4A80]/50 rounded-4xl px-7 py-2 transition-all hover:bg-[#143F4A] hover:text-white'>
+                  Read More →
+                </a>
               </div>
 
             </div>
-
-            {/* Cruise Section End */}
-
-             {/* Hiking Section Start */}
-
-            <div className="w-[230px] h-[340px]  border border-black">
-
-              <img className='w-[230px] h-[] mb-4'
-                src="src/assets/Images/hikingImg.svg" alt="Bird Img" />
-
-              <p className='text-[24px] text-center font-bold mb-2'>Airbirds</p>
-
-              <div className='flex justify-center'>
-                <a href="#" className='text-[18px] border border-[#143F4A80]/50 rounded-4xl px-7 py-2'>Read More →</a>
-              </div>
-
-            </div>
-
-            {/* Hiking Section End */}
-
-            {/* Bird Section Start */}
-
-            <div className="w-[230px] h-[340px]  border border-black">
-
-              <img className='w-[230px] h-[] mb-4'
-                src="src/assets/Images/birdImg.svg" alt="Bird Img" />
-
-              <p className='text-[24px] text-center font-bold mb-2'>Airbirds</p>
-
-              <div className='flex justify-center'>
-                <a href="#" className='text-[18px] border border-[#143F4A80]/50 rounded-4xl px-7 py-2'>Read More →</a>
-              </div>
-
-            </div>
-
-            {/* Bird Section End */}
-
-             {/* Wild Life Section Start */}
-
-            <div className="w-[230px] h-[340px]  border border-black">
-
-              <img className='w-[230px] h-[] mb-4'
-                src="src/assets/Images/wildLifeImg.svg" alt="Bird Img" />
-
-              <p className='text-[24px] text-center font-bold mb-2'>Airbirds</p>
-
-              <div className='flex justify-center'>
-                <a href="#" className='text-[18px] border border-[#143F4A80]/50 rounded-4xl px-7 py-2'>Read More →</a>
-              </div>
-
-            </div>
-
-            {/* Wild Life Section End */}
-
-             {/* Walking Section Start */}
-
-            <div className="w-[230px] h-[340px]  border border-black">
-
-              <img className='w-[230px] h-[] mb-4'
-                src="src/assets/Images/walkingImg.svg" alt="Bird Img" />
-
-              <p className='text-[24px] text-center font-bold mb-2'>Airbirds</p>
-
-              <div className='flex justify-center'>
-                <a href="#" className='text-[18px] border border-[#143F4A80]/50 rounded-4xl px-7 py-2'>Read More →</a>
-              </div>
-
-            </div>
-
-            {/* Walking Section End */}
-
-          </div>
-
-          {/* Img and Read More Section End */}
+          ))}
 
         </div>
-
-        {/* Categories Read More Section End */}
+        {/* Categories Section End */}
 
       </div>
     </div>

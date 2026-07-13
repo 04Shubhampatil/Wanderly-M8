@@ -1,4 +1,4 @@
-import React from "react";
+
 import BackBlueImg from "../../assets/Images/BackBlueImg.svg";
 // import plane from "../../assets/icons/plane.png";
 import Airplane from "../../assets/icons/Airplane.svg";
