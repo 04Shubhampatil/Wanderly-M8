@@ -1,0 +1,82 @@
+{
+  "filters": {
+    "destination": {
+      "Asia": [
+        { "name": "Dubai", "count": 5 },
+        { "name": "Japan", "count": 3 },
+        { "name": "Thailand", "count": 3 },
+        { "name": "India", "count": 4 },
+        { "name": "Vietnam", "count": 2 },
+        { "name": "Sri Lanka", "count": 2 },
+        { "name": "South Korea", "count": 1 },
+        { "name": "Hong Kong", "count": 1 },
+        { "name": "Singapore", "count": 2 },
+        { "name": "Bali", "count": 1 }
+      ]
+    },
+    "tourType": ["Walking", "Airbirds", "Hiking", "Cruises", "Wildlife"],
+    "pricing": {
+      "min": 65,
+      "max": 2450,
+      "selected": 1120
+    },
+    "discountOffer": [
+      { "name": "Last Minutes Deal", "count": 1 },
+      { "name": "Special Offers", "count": 4 }
+    ]
+  },
+  "tours": [
+    {
+      "id": 1,
+      "title": "Singapore Urban Tour",
+      "price": 912,
+      "rating": 4.8,
+      "duration": "4 Days",
+      "image": "singapore.jpg"
+    },
+    {
+      "id": 2,
+      "title": "Maldives Luxury",
+      "price": 1890,
+      "rating": 4.9,
+      "duration": "5 Days",
+      "image": "maldives.jpg"
+    },
+    {
+      "id": 3,
+      "title": "Thailand Island Escape",
+      "price": 780,
+      "rating": 4.8,
+      "duration": "3 Days",
+      "image": "thailand.jpg"
+    },
+    {
+      "id": 4,
+      "title": "Japan Cultural Tour",
+      "price": 820,
+      "rating": 4.9,
+      "duration": "2 Days",
+      "image": "japan.jpg"
+    },
+    {
+      "id": 5,
+      "title": "Bangkok Culture",
+      "price": 528,
+      "rating": 4.8,
+      "duration": "4 Days",
+      "image": "bangkok.jpg"
+    },
+    {
+      "id": 6,
+      "title": "Phuket Beach Getaway",
+      "price": 420,
+      "rating": 4.7,
+      "duration": "8 Days",
+      "image": "phuket.jpg"
+    }
+  ],
+  "pagination": {
+    "currentPage": 1,
+    "totalPages": 3
+  }
+}

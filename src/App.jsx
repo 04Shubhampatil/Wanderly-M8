@@ -2,7 +2,8 @@ import React from "react"
 import Hero from "./pages/HomePackages.jsx/Hero"
 import HomePackages from "./pages/HomePackages.jsx/HomePackages"
 
-const App = () => {
+
+function App() {
   return (
     <>
       <Hero />
