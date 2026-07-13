@@ -1,13 +1,15 @@
-import React from "react";
-import Dubai_Luxury_Escape from "./pages/Pakages_Dubai/Dubai_Luxury_Escape";
+import React from "react"
+import Hero from "./pages/HomePackages.jsx/Hero"
+import HomePackages from "./pages/HomePackages.jsx/HomePackages"
 
 
 function App() {
   return (
-    <div>
-      <Dubai_Luxury_Escape />
-    </div>
-  );
+    <>
+      <Hero />
+      <HomePackages />
+    </>
+  )
 }
 
 export default App;
