@@ -5,6 +5,7 @@ import Day_Wise from "./Day_Wise";
 import About from "./About";
 import Navbar from "../../components/layout/Navbar";
 import TravelerReviews from "./TravelerReviews";
+import You_May_Also_Like from "./You_May_Also_Like"
 
 
 const Dubai_Luxury_Escape = () => {
@@ -43,6 +44,7 @@ const Dubai_Luxury_Escape = () => {
               <Day_Wise />
               < About />
               <TravelerReviews/>
+              < You_May_Also_Like />
              
 
 
