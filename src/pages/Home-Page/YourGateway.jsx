@@ -1,4 +1,4 @@
-import React from 'react'
+
 import morphBgImg from '../../assets/Images/3D Morph Lines 6.svg'
 
 const YourGateway = () => {
